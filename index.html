@@ -1,0 +1,131 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game of Hand</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .player img {
+            cursor: pointer;
+            width: 100px;
+            margin: 5px;
+        }
+        .player img.selected {
+            border: 3px solid green;
+        }
+        .result img {
+            width: 100px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <button id="start-btn">Start</button>
+        <p id="countdown"></p>
+        <section class="player">
+            <img src="./img/paper.png" alt="paper">
+            <img src="./img/rock.png" alt="rock">
+            <img src="./img/scissors.png" alt="scissors">
+        </section>
+    </section>
+    <script src="./script.js" defer></script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game of Hand</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .main-box {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-flow: column;
+        }
+
+        .start-btn {
+            padding: 20px 40px;
+            border-radius: 10px;
+            border-color: aquamarine;
+            background: darkturquoise;
+            font-size: larger;
+            font-family: cursive;
+        }
+
+        .player img {
+            cursor: pointer;
+            width: 100px;
+            margin: 5px;
+        }
+
+        .player img.selected {
+            border: 3px solid green;
+        }
+
+        .result {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .result .choice {
+            text-align: center;
+        }
+
+        .result img {
+            width: 100px;
+        }
+
+        #countdown {
+            font-size: 30px;
+            font-weight: bold;
+            font-weight: 700;
+            font-family: cursive;
+            margin-top: 10px;
+        }
+
+        h2 {
+            font-family: monospace;
+            font-size: xxx-large;
+        }
+
+        .robot img {
+            pointer-events: none;
+            opacity: 0.5;
+            max-width: 100px;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="main-box">
+        <h2>:Robot</h2>
+        <section class="robot">
+            <img src="./img/paper.png" alt="paper" class="robot-img">
+            <img src="./img/rock.png" alt="rock" class="robot-img">
+            <img src="./img/scissors.png" alt="scissors" class="robot-img">
+        </section>
+        <button class="start-btn" id="start-btn">Start</button>
+        <p id="countdown"></p>
+        <section class="player">
+            <img src="./img/paper.png" alt="paper">
+            <img src="./img/rock.png" alt="rock">
+            <img src="./img/scissors.png" alt="scissors">
+        </section>
+        <h2>:You</h2>
+    </section>
+    <script src="./script.js" defer></script>
+</body>
+
+</html>
